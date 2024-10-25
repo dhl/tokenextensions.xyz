@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+html {
+  background-color: black;
+}
+
+::selection {
+  background-color: #14F195;
+  color: black;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: black linear-gradient(
+          to bottom,
+          transparent,
+          rgb(var(--background-end-rgb))
+  );
+  min-height: 100vh;
+}
